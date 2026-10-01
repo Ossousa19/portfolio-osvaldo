@@ -1,0 +1,13 @@
+﻿Imagens dos cases. Enquanto a imagem não existir, o site mostra uma capa tipográfica no lugar.
+
+sala-dos-buscadores.jpg
+ciw.webp
+techx.webp
+incode.webp
+geni.webp
+lithium.webp
+oxybooks.jpg
+figma-web.png  (capa da seção "Todos os projetos no Figma")
+
+Airton Ótica fica sem imagem, só com o texto.
+

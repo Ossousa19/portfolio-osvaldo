@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Osvaldo Sousa | UI/UX Design & Marketing Digital</title>
+  <meta name="description" content="Designer UI/UX & Marketing Digital. Interface, estratégia, conteúdo e tecnologia — da ideia ao que vai pro ar.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#inicio" class="nav__logo" aria-label="Osvaldo Sousa — início">
+        <img src="assets/logo.svg" alt="Osvaldo Sousa">
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato" class="nav__cta">Contato</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <figure class="hero__bg" id="heroBg">
+        <img src="assets/osvaldo-2.jpg" alt="Osvaldo Sousa no Oxygeni Hub" width="1600" height="900" fetchpriority="high">
+      </figure>
+      <div class="wrap hero__content">
+        <div class="hero__top">
+          <p class="eyebrow reveal"><span class="dot"></span>Designer UI/UX &amp; Marketing Digital</p>
+          <p class="hero__where reveal">Hoje no <strong>Oxygeni Hub</strong> · Universidade CEUMA</p>
+        </div>
+        <div class="hero__copy">
+          <p class="hero__statement reveal">Interface, estratégia, conteúdo e tecnologia — no mesmo projeto.</p>
+          <p class="hero__lead reveal">Desenho marcas, interfaces e campanhas a partir do problema, não da peça. Do conceito ao protótipo, do roteiro ao vídeo, do layout ao código no ar.</p>
+          <div class="hero__actions reveal">
+            <a href="#projetos" class="btn btn--primary">Ver projetos <span aria-hidden="true">↓</span></a>
+            <a href="#contato" class="btn btn--ghost">Falar comigo</a>
+          </div>
+        </div>
+        <h1 class="hero__name" aria-label="Osvaldo Sousa">
+          <span class="hero__line"><span>Osvaldo</span></span>
+          <span class="hero__line hero__line--accent"><span>Sousa</span></span>
+        </h1>
+      </div>
+      <div class="wrap hero__marquee" aria-hidden="true">
+        <div class="marquee">
+          <div class="marquee__track">
+            <span>UI/UX Design</span><span>Web Design</span><span>Branding</span><span>Marketing Digital</span><span>Direção Criativa</span><span>Audiovisual</span><span>Front-end</span><span>IA Generativa</span>
+            <span>UI/UX Design</span><span>Web Design</span><span>Branding</span><span>Marketing Digital</span><span>Direção Criativa</span><span>Audiovisual</span><span>Front-end</span><span>IA Generativa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="wrap">
+        <p class="label reveal">01 — Sobre</p>
+        <div class="about__grid">
+          <h2 class="h2 reveal">Comecei pelas peças.<br><span class="muted">Hoje o trabalho começa antes delas.</span></h2>
+          <div class="about__body">
+            <p class="reveal">Minha base é o design gráfico. Com o tempo, o trabalho passou a começar mais cedo — na estratégia, na arquitetura da informação, no conceito da campanha — e a terminar mais tarde: no protótipo, na landing page publicada, no vídeo editado, na cobertura do evento.</p>
+            <p class="reveal">No <strong>Oxygeni Hub</strong>, agência de inovação, tecnologia e empreendedorismo da Universidade CEUMA, atuo em design, marketing, comunicação, campanhas, eventos, conteúdo, audiovisual e produtos digitais. Também criei e produzo o podcast <strong>Oxygeni Station</strong>.</p>
+          </div>
+        </div>
+
+        <!-- Evolução: o escopo vai se acumulando -->
+        <div class="scope reveal" id="scope">
+          <div class="scope__line"><span class="scope__fill"></span></div>
+          <ol class="scope__steps">
+            <li><span class="scope__n">Peça</span>Design gráfico</li>
+            <li><span class="scope__n">Marca</span>Identidade visual</li>
+            <li><span class="scope__n">Interface</span>UI/UX e protótipo</li>
+            <li><span class="scope__n">Estratégia</span>Marketing e conteúdo</li>
+            <li><span class="scope__n">Imagem</span>Audiovisual</li>
+            <li><span class="scope__n">Código</span>Front-end</li>
+          </ol>
+        </div>
+
+        <div class="proof reveal">
+          <p><strong>50+</strong> projetos entregues</p>
+          <p><strong>10+</strong> eventos organizados</p>
+          <p class="proof__note">Participação em dezenas de projetos entre educação, tecnologia, inovação e marcas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section work" id="projetos">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label reveal">02 — Projetos selecionados</p>
+          <h2 class="h2 reveal">Da identidade ao<br>produto no ar.</h2>
+        </div>
+
+        <!--
+          IMAGENS DOS CASES
+          Coloque as imagens em assets/projetos/ com os nomes abaixo (jpg).
+          Enquanto a imagem não existir, aparece a capa tipográfica.
+        -->
+
+        <!-- Case destaque: Sala dos Buscadores -->
+        <article class="case case--feature reveal">
+          <figure class="case__media" data-cover="Sala dos Buscadores">
+            <img class="fit-contain" style="background:#111312" src="assets/projetos/sala-dos-buscadores.jpg" alt="Identidade visual da Sala dos Buscadores: logo com arco e escada em versões dourada, vinho, preta e creme" loading="lazy" onerror="this.remove()">
+          </figure>
+          <div class="case__info">
+            <p class="case__meta">Projeto autoral · Da marca ao MVP</p>
+            <h3 class="case__title">Sala dos Buscadores</h3>
+            <p class="case__desc">Um projeto conduzido de ponta a ponta. A identidade visual definiu a linguagem, a landing page levou essa linguagem para a interface e o MVP transformou a experiência em produto.</p>
+            <ol class="flow">
+              <li>Branding</li>
+              <li>Landing Page</li>
+              <li>MVP</li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- Oxygeni Hub -->
+        <div class="hub reveal">
+          <div class="hub__head">
+            <p class="case__meta">Onde atuo hoje</p>
+            <h3 class="hub__title">Oxygeni Hub</h3>
+          </div>
+          <p class="hub__desc">Agência de Inovação, Tecnologia e Empreendedorismo da Universidade CEUMA. Aqui o trabalho atravessa design, marketing, comunicação, campanhas, eventos, conteúdo, audiovisual e produtos digitais.</p>
+        </div>
+
+        <div class="cases">
+          <article class="case case--wide reveal">
+            <figure class="case__media" data-cover="CIW 2025">
+              <img class="fit-contain" style="background:#0c0b1f" src="assets/projetos/ciw.webp" alt="Identidade visual do CIW 2025 — Ceuma Innovation Weekend: versões do logo e paleta de cores" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="case__info">
+              <p class="case__meta">Oxygeni Hub · Evento</p>
+              <h3 class="case__title">CIW 2025</h3>
+              <p class="case__desc">Ceuma Innovation Weekend. Identidade visual e comunicação do evento.</p>
+              <ul class="tags"><li>Branding</li><li>Eventos</li><li>Comunicação visual</li></ul>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <figure class="case__media case__media--collage" data-cover="TechX">
+              <img class="fit-contain" src="assets/projetos/techx.webp" alt="Campanha TechX: posts, fotos de evento, vídeos e coleção de roupas Root Access Unrestricted" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="case__info">
+              <p class="case__meta">Oxygeni Hub · Campanha</p>
+              <h3 class="case__title">TechX</h3>
+              <p class="case__desc">Campanha e comunicação visual do TechX, incluindo o site do Drop TechX.</p>
+              <ul class="tags"><li>Campanha</li><li>Comunicação visual</li><li>Web Design</li></ul>
+            </div>
+          </article>
+
+          <article class="case reveal">
+            <figure class="case__media case__media--collage" data-cover="Incode Tech School">
+              <img class="fit-contain" src="assets/projetos/incode.webp" alt="Campanha Incode Tech School: posts de matrículas, módulos e identidade da escola" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="case__info">
+              <p class="case__meta">Oxygeni Hub · Campanha</p>
+              <h3 class="case__title">Incode Tech School</h3>
+              <p class="case__desc">Campanhas e comunicação da escola de programação.</p>
+              <ul class="tags"><li>Campanha</li><li>Comunicação visual</li></ul>
+            </div>
+          </article>
+
+          <article class="case case--sm reveal">
+            <figure class="case__media" data-cover="GENI">
+              <img class="fit-top" src="assets/projetos/geni.webp" alt="Landing page do GENI" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="case__info">
+              <p class="case__meta">Oxygeni Hub · Experiência</p>
+              <h3 class="case__title">GENI</h3>
+              <p class="case__desc">Jornada GENI e experiência visual.</p>
+            </div>
+          </article>
+
+          <article class="case case--sm reveal">
+            <figure class="case__media" data-cover="Lithium">
+              <img src="assets/projetos/lithium.webp" alt="Logo Lithium — Soluções Oxygeni" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="case__info">
+              <p class="case__meta">Oxygeni Hub · Branding</p>
+              <h3 class="case__title">Lithium</h3>
+              <p class="case__desc">Identidade visual.</p>
+            </div>
+          </article>
+
+          <article class="case case--sm reveal">
+            <figure class="case__media" data-cover="OxyBooks">
+              <img src="assets/projetos/oxybooks.jpg" alt="OxyBooks: website em construção do Oxygeni" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="case__info">
+              <p class="case__meta">Oxygeni Hub · Produto digital</p>
+              <h3 class="case__title">OxyBooks</h3>
+              <p class="case__desc">Website, em construção.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="also reveal">
+          <p class="also__label">Também no Oxygeni Hub</p>
+          <ul>
+            <li>Vídeos institucionais</li>
+            <li>Coberturas de eventos</li>
+            <li>Campanhas e materiais de comunicação</li>
+          </ul>
+        </div>
+
+        <!-- Case destaque: Airton Ótica -->
+        <article class="case case--text reveal">
+          <div class="case__info">
+            <p class="case__meta">Projeto externo · Campanha</p>
+            <h3 class="case__title">Airton Ótica</h3>
+            <p class="case__desc">Uma campanha pensada como comunicação, não como sequência de posts: conceito e direção criativa guiando a gravação, a fotografia, o design e o conteúdo para redes sociais.</p>
+            <ol class="flow flow--list">
+              <li>Campanha</li>
+              <li>Direção criativa</li>
+              <li>Gravação</li>
+              <li>Fotografia</li>
+              <li>Design</li>
+              <li>Conteúdo para redes</li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- Mais projetos (portfólio anterior) -->
+        <div class="more">
+          <div class="more__head reveal">
+            <h3 class="hub__title hub__title--sm">Mais projetos</h3>
+            <div class="filters" aria-label="Filtrar projetos">
+              <button class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+              <button class="filter" data-filter="branding" aria-pressed="false">Branding</button>
+              <button class="filter" data-filter="marketing" aria-pressed="false">Marketing</button>
+              <button class="filter" data-filter="educacao" aria-pressed="false">Educação</button>
+              <button class="filter" data-filter="uxui" aria-pressed="false">UX/UI</button>
+              <button class="filter" data-filter="eventos" aria-pressed="false">Eventos</button>
+              <button class="filter" data-filter="apresentacao" aria-pressed="false">Apresentação</button>
+            </div>
+          </div>
+
+          <ul class="more__list">
+            <li class="project reveal" data-cat="branding">
+              <p class="project__cat">Branding</p>
+              <h4>Identidade Visual Tech Startup</h4>
+              <p class="project__desc">Criação completa de identidade visual para startup de tecnologia, incluindo logo, paleta de cores e guidelines.</p>
+              <dl class="project__facts"><div><dt>Papel</dt><dd>Design Lead</dd></div><div><dt>Impacto</dt><dd>Marca reconhecida no ecossistema de inovação</dd></div></dl>
+            </li>
+            <li class="project reveal" data-cat="marketing">
+              <p class="project__cat">Marketing</p>
+              <h4>Campanha Digital Educacional</h4>
+              <p class="project__desc">Estratégia e execução de campanha digital para programa educacional de tecnologia.</p>
+              <dl class="project__facts"><div><dt>Papel</dt><dd>Estrategista de Marketing</dd></div><div><dt>Impacto</dt><dd>+300% de engajamento nas redes</dd></div></dl>
+            </li>
+            <li class="project reveal" data-cat="educacao uxui">
+              <p class="project__cat">Educação · UX/UI</p>
+              <h4>Plataforma de Aprendizado IA</h4>
+              <p class="project__desc">Concepção e design de experiência para plataforma de ensino com inteligência artificial.</p>
+              <dl class="project__facts"><div><dt>Papel</dt><dd>UX/UI Designer</dd></div><div><dt>Impacto</dt><dd>Interface intuitiva para +1000 alunos</dd></div></dl>
+            </li>
+            <li class="project reveal" data-cat="apresentacao">
+              <p class="project__cat">Apresentação</p>
+              <h4>Pitch Deck para Investidores</h4>
+              <p class="project__desc">Design de apresentação estratégica para captação de investimento seed.</p>
+              <dl class="project__facts"><div><dt>Papel</dt><dd>Designer de Apresentações</dd></div><div><dt>Impacto</dt><dd>Captação de R$500k em seed</dd></div></dl>
+            </li>
+            <li class="project reveal" data-cat="uxui">
+              <p class="project__cat">UX/UI</p>
+              <h4>Redesign de Portal Corporativo</h4>
+              <p class="project__desc">Redesign completo de portal interno com foco em experiência do usuário.</p>
+              <dl class="project__facts"><div><dt>Papel</dt><dd>UX Designer</dd></div><div><dt>Impacto</dt><dd>Redução de 40% no tempo de navegação</dd></div></dl>
+            </li>
+            <li class="project reveal" data-cat="eventos branding">
+              <p class="project__cat">Eventos</p>
+              <h4>Material Visual para Hackathon</h4>
+              <p class="project__desc">Criação de todo material visual e comunicação para hackathon nacional.</p>
+              <dl class="project__facts"><div><dt>Papel</dt><dd>Diretor Criativo</dd></div><div><dt>Impacto</dt><dd>+500 participantes inscritos</dd></div></dl>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Arquivo completo no Figma -->
+        <a class="archive reveal" href="https://www.figma.com/design/yVhiH8kPilvYTbb67pX1aR/Projetos---Osvaldo-Sousa-Design?node-id=1-2" target="_blank" rel="noopener">
+          <div class="archive__info">
+            <p class="also__label">Arquivo completo</p>
+            <h3 class="archive__title">Todos os projetos<br>no Figma</h3>
+            <p class="archive__desc">Identidades visuais, aplicações web, landing pages, brand books e telas de produto, organizados em um só arquivo.</p>
+            <ul class="tags">
+              <li>Identidades visuais</li><li>Aplicações web</li><li>Landing pages</li><li>Brand book Incode</li><li>Telas Geni</li><li>Telas OxyBooks</li>
+            </ul>
+            <span class="btn btn--primary archive__btn">Abrir no Figma ↗</span>
+          </div>
+          <figure class="archive__cover">
+            <img src="assets/projetos/figma-web.png" alt="Prévia do arquivo de projetos no Figma: peças do Oxygeni Station, CIW 2025, Incode e TechX" loading="lazy">
+          </figure>
+        </a>
+      </div>
+    </section>
+
+    <!-- PODCAST -->
+    <section class="section podcast" id="podcast">
+      <div class="wrap podcast__grid">
+        <div>
+          <p class="label reveal">Podcast</p>
+          <h2 class="podcast__title reveal">Oxygeni<br>Station</h2>
+          <a class="btn btn--primary reveal" href="https://www.youtube.com/@OxygeniStation" target="_blank" rel="noopener">Assistir no YouTube ↗</a>
+        </div>
+        <div class="podcast__body">
+          <p class="podcast__lead reveal">Podcast com produção criativa e estratégica, focado em tecnologia, inovação, ideias e pessoas.</p>
+          <p class="reveal">Mais do que um podcast: um espaço para explorar ideias, conectar pessoas e discutir o futuro da tecnologia e da inovação. Cada episódio é pensado para inspirar e provocar reflexões.</p>
+          <ul class="podcast__roles reveal" aria-label="Meu papel no projeto">
+            <li>Criação do projeto</li><li>Direção criativa</li><li>Produção</li><li>Conteúdo</li>
+          </ul>
+          <div class="content reveal">
+            <p class="also__label">Produção de conteúdo</p>
+            <dl>
+              <div><dt>Vídeos educacionais</dt><dd>Conteúdo em vídeo para projetos educacionais e formações em tecnologia.</dd></div>
+              <div><dt>Conteúdo para redes</dt><dd>Peças visuais e vídeos pensados para engajamento.</dd></div>
+              <div><dt>Cobertura de eventos</dt><dd>Documentação visual e conteúdo para eventos, hackathons e experiências.</dd></div>
+              <div><dt>Vídeos de tecnologia</dt><dd>Inovação, IA e tendências tecnológicas.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section class="section services" id="especialidades">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label reveal">03 — Especialidades</p>
+          <h2 class="h2 reveal">Seis frentes,<br>um mesmo raciocínio.</h2>
+        </div>
+        <ol class="services__list">
+          <li class="reveal"><span class="services__n">01</span><h3>UI/UX Design</h3><p>Interfaces, prototipação, arquitetura da informação e experiências digitais.</p></li>
+          <li class="reveal"><span class="services__n">02</span><h3>Web Design</h3><p>Landing pages, websites e interfaces digitais.</p></li>
+          <li class="reveal"><span class="services__n">03</span><h3>Branding</h3><p>Identidade visual, direção visual e sistemas de marca.</p></li>
+          <li class="reveal"><span class="services__n">04</span><h3>Marketing &amp; Conteúdo</h3><p>Estratégia, campanhas, social media e comunicação digital.</p></li>
+          <li class="reveal"><span class="services__n">05</span><h3>Direção Criativa</h3><p>Conceito visual, campanhas e direcionamento de projetos.</p></li>
+          <li class="reveal"><span class="services__n">06</span><h3>Audiovisual</h3><p>Produção, edição de vídeo, conteúdo e cobertura de eventos.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="section path" id="trajetoria">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="label reveal">04 — Experiência</p>
+          <h2 class="h2 reveal">Trajetória feita<br>na prática.</h2>
+        </div>
+
+        <div class="path__list">
+          <article class="path__item reveal">
+            <p class="path__where">Oxygeni Hub · Universidade CEUMA</p>
+            <div>
+              <h3>Design, marketing e comunicação</h3>
+              <p>Campanhas, eventos, conteúdo, audiovisual e produtos digitais da agência de inovação, tecnologia e empreendedorismo.</p>
+            </div>
+          </article>
+
+          <article class="path__item reveal">
+            <p class="path__where">Eventos</p>
+            <div class="events">
+              <div>
+                <h3>Hackathon Mastery Med</h3>
+                <p>Organização geral, gestão das demandas criativas, materiais visuais e comunicação de um hackathon de inovação em saúde.</p>
+              </div>
+              <div>
+                <h3>InCode Experience</h3>
+                <p>Produção visual, comunicação e coordenação de pitches.</p>
+              </div>
+              <div>
+                <h3>Academ.IA</h3>
+                <p>Conteúdo, roteiros, comunicação visual e cobertura do Final Challenge de um programa de IA aplicada.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="path__item reveal">
+            <p class="path__where">Projetos autorais e externos</p>
+            <div>
+              <h3>Sala dos Buscadores · Airton Ótica</h3>
+              <p>Do branding ao MVP em um projeto autoral, e da direção criativa à campanha publicada.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section skills" id="habilidades">
+      <div class="wrap skills__grid">
+        <div>
+          <p class="label reveal">05 — Habilidades</p>
+          <div class="skills__main reveal">
+            <p class="skills__tag">Ferramenta principal</p>
+            <p class="skills__figma">Figma</p>
+            <p class="skills__sub">Interfaces, protótipos, sistemas de marca e apresentações.</p>
+          </div>
+        </div>
+        <dl class="skills__groups">
+          <div class="reveal"><dt>Código</dt><dd>HTML · CSS · JavaScript</dd></div>
+          <div class="reveal"><dt>Vídeo</dt><dd>CapCut · edição de vídeo</dd></div>
+          <div class="reveal"><dt>IA</dt><dd>Ferramentas de IA e criação generativa</dd></div>
+          <div class="reveal"><dt>Prototipação</dt><dd>Ferramentas de prototipação e criação digital</dd></div>
+          <div class="reveal"><dt>Método</dt><dd>Arquitetura da informação · Prototipação · Estratégia de conteúdo · Direção criativa</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="wrap">
+        <p class="label reveal">06 — Contato</p>
+        <h2 class="contact__title reveal">Tem uma ideia que precisa virar marca, interface ou campanha?</h2>
+        <a class="contact__mail reveal" href="mailto:osvaldosousam19@gmail.com">osvaldosousam19@gmail.com <span aria-hidden="true">→</span></a>
+        <ul class="contact__links reveal">
+          <li><a href="https://linkedin.com/in/osvaldosousa" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://instagram.com/osousa.brand" target="_blank" rel="noopener">Instagram ↗</a></li>
+          <li><a href="https://wa.me/5598992033090" target="_blank" rel="noopener">WhatsApp ↗</a></li>
+          <li><a href="https://www.youtube.com/@OxygeniStation" target="_blank" rel="noopener">Oxygeni Station ↗</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img src="assets/logo.svg" alt="Osvaldo Sousa" class="footer__logo">
+      <p>© <span id="year">2026</span> Osvaldo Sousa</p>
+      <a href="#inicio" class="link">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
