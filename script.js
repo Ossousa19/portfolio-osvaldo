@@ -81,3 +81,44 @@ const spy = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-45% 0px -50% 0px' });
 document.querySelectorAll('main section[id]').forEach((s) => spy.observe(s));
+
+// Reels: setas, arrastar com o mouse e estado das setas
+const rail = document.getElementById('reelsRail');
+if (rail) {
+  const prev = document.getElementById('reelsPrev');
+  const next = document.getElementById('reelsNext');
+  const step = () => (rail.querySelector('.reel')?.offsetWidth || 260) * 2;
+  const sync = () => {
+    prev.disabled = rail.scrollLeft < 4;
+    next.disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 4;
+  };
+  prev.addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: calm ? 'auto' : 'smooth' }));
+  next.addEventListener('click', () => rail.scrollBy({ left: step(), behavior: calm ? 'auto' : 'smooth' }));
+  rail.addEventListener('scroll', sync, { passive: true });
+  window.addEventListener('resize', sync);
+  sync();
+
+  let down = false, moved = false, startX = 0, startLeft = 0;
+  rail.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    down = true; moved = false; startX = e.clientX; startLeft = rail.scrollLeft;
+  });
+  window.addEventListener('pointermove', (e) => {
+    if (!down) return;
+    const dx = e.clientX - startX;
+    if (!moved && Math.abs(dx) > 6) { moved = true; rail.classList.add('is-dragging'); }
+    if (moved) rail.scrollLeft = startLeft - dx;
+  });
+  window.addEventListener('pointerup', () => {
+    if (!down) return;
+    down = false;
+    if (moved) {
+      rail.classList.remove('is-dragging');
+      // solta e deixa o snap acomodar no card mais próximo
+      const w = rail.querySelector('.reel').offsetWidth + parseFloat(getComputedStyle(rail).columnGap || 0);
+      rail.scrollTo({ left: Math.round(rail.scrollLeft / w) * w, behavior: calm ? 'auto' : 'smooth' });
+    }
+  });
+  // evita abrir o link depois de arrastar
+  rail.addEventListener('click', (e) => { if (moved) { e.preventDefault(); moved = false; } }, true);
+}
